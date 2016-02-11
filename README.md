@@ -1,5 +1,5 @@
 # wwcg
-A proto for a data-driven collab with Meteor.
+A proto for a data-driven collab using Meteor.
 
 This application allows clients to collaborate on a shared scalable drawing canvas. 
 
