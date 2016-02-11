@@ -11,3 +11,6 @@ The SVG elements are saved in a database and reactively broadcast to all connect
 to be rendered into corresponding SVG elements on their end. The client-side canvases are 
 scaled according to the size of the user's viewport and the SVG data is mapped into a static-sized 
 virtual DB canvas. This allows the users to see the entire canvas regardless of the screen size.
+
+
+To test it download and run with meteor or visit trwwc2.meteor.com (test server, may suffer outages).
