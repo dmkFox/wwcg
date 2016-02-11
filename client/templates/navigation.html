@@ -1,0 +1,76 @@
+<!-- top level template for the nav bar -->
+<template name="navbar">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">
+        World Wide Canvas
+      </a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse_button_div" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+    </div>
+    {{>nav_buttons}}
+			
+  </div>
+</nav>
+</template>
+
+<template name="nav_buttons">
+  <div class="navbar-collapse collapse" id="collapse_button_div" aria-expanded="false" style="height: 1px;">
+    <div class="colorSelector toolBarItem">
+      <a href="#" class="selectedColor" style="background: {{selectedColor}}"><span class="glyphicon glyphicon-triangle-bottom"></span></a>
+    </div>
+    <select class="form-controls toolSelect toolBarItem">
+      <option value="line">Pencil</option>
+      <option value="round">Round brush</option>
+      <option value="rect">Rectangular brush</option>
+      <option value="calligraphy">Straight edge</option>
+    </select>  
+    <input type="number" class="thicknessInput toolBarItem" value="3" min="1" max="10">
+    <div class="nav navbar-nav navbar-right buttonBox">
+      <a id="clearButton" href="#" class="btn nav-button btn-default navbar-btn">Clear</a>
+      <a id="exportButton" href="#" class="btn nav-button btn-default navbar-btn">Export</a>
+    </div>
+  </div>
+</template>
+
+<template name="nav_buttons2">
+  <div class="navbar-collapse collapse" id="collapse_button_div" aria-expanded="false" style="height: 1px;">
+    <ul class="nav navbar-nav">
+      <li>
+        <div class="colorSelector toolBarItem">
+          <a href="#" class="selectedColor" style="background: {{selectedColor}}"><span class="glyphicon glyphicon-triangle-bottom"></span></a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="" class="dropdown-toggle toolDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Line Tool<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a id="lineToolLink toolLink" href="">Line Tool</a></li>
+          <li><a id="roundBrushLink toolLink" href="">Round brush</a></li>
+          <li><a id="rectBrushLink toolLink" href="">Rectangular brush</a></li>
+          <li><a id="edgeLink toolLink" href="">Straight edge</a></li>
+        </ul>
+      </li>
+      <li><input type="number" class="thicknessInput toolBarItem" value="3" min="1" max="10"></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li>
+        <a id="clearButton" href="#" class="btn nav-button btn-default navbar-btn">Clear</a>
+      </li>
+      <li>
+        <a id="exportButton" href="#" class="btn nav-button btn-default navbar-btn">Export</a>
+      </li>
+    </ul>  
+  </div>
+</template>
+
+<template name="landing_nav">
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">
+        World Wide Canvas
+      </a>
+    </div>      
+  </div>
+</nav>
+</template>

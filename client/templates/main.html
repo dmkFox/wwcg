@@ -1,0 +1,54 @@
+<head>
+  <title>World Wide Canvas</title>
+</head>
+
+
+<template name="ApplicationLayout">
+  {{> yield "header"}}
+  
+  {{> yield "main"}}
+</template>
+
+<template name="wall">
+  {{> palette}}
+  <div class="canvasContainer">
+    {{> canvas}}  
+  </div>
+<!-- A canvas element to facilitate exporting the svg as a png image-->
+<canvas class="hidden"></canvas>
+</template>
+
+<template name="palette">
+  <div class="quickPalette">
+    <ul class="colorList">
+      {{#each colors}}
+        {{> colorItem}}
+      {{/each}}
+    </ul>
+  </div>
+</template>
+
+
+
+
+<template name="canvas">
+  <div id="canvas" >
+  </div>
+</template>
+
+<template name="colorItem">
+  <a><li class="colorItem" style="background:{{color}}"></li></a>
+</template>
+
+
+<template name="canvas_nav">
+{{> navbar}}
+</template> 
+
+<template name="loading">
+{{> landing_nav}}
+<div class="container">
+  <h2>Loading... Please wait</h2>
+</div>
+
+</template>

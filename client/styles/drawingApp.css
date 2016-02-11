@@ -1,0 +1,130 @@
+/*General*/
+
+.hidden {
+	display: none;
+}
+
+body {
+	background: rgba(242,242,242,1);
+	overflow: hidden;
+}
+
+
+/*Navbar modifications*/
+
+
+nav, .nav, .navbar {
+	margin-bottom: 0;
+}
+
+.nav-button  {
+	
+	margin: 5px 2px 4px 0;
+	line-height: 20px;
+	width: 60px;
+	background: #555;
+	border: 1px solid #333;
+	color: white;
+	padding: 2px;
+}
+
+
+.nav-button:active, .nav-button:visited, 
+.nav-button:focus, .nav-button:active:focus, 
+.nav-button.active:focus {
+	background: #555;
+	border: 1px solid #333;
+	color: white;
+}
+
+.nav-button:hover {
+	background: #666;
+	border: 1px solid #333;
+	color: white;
+}
+
+/*Tool and control related*/
+
+.toolBarBase {
+	
+	padding: 5px 8px;
+	margin-bottom: 5px;
+	background: #222;
+	width: 100%;
+}
+
+.toolBarHeader {
+	vertical-align: middle;
+	color: white;
+	font-size: 22px;
+}
+
+.toolContainer {
+	padding: 0;
+	margin: 0;
+	
+}
+
+.control {
+	display: inline-block;
+	vertical-align: middle;
+	height: 28px;
+	width: 60px;
+	padding: 2px 4px;
+	margin: 0 0 2px 0;
+}
+
+
+.colorSelector {
+	display: inline-block;
+	
+	
+}
+
+.selectedColor, .selectedColor:link {
+	display: block;
+	width: 140px;
+	height: 24px;
+	border: 1px solid black;
+	
+	vertical-align: top;
+
+	padding: 2px;
+	margin: 2px 0 0 0;
+
+	color: black;
+	text-decoration: none;
+	text-align: right;
+}
+
+.selectedColor:hover, .selectedColor:active, .selectedColor:visited {
+	text-decoration: none;
+	color: #555;
+}
+
+.toolBarItem {
+	margin: 8px 0 0 10px;
+	padding: 0;
+
+}
+
+.toolSelect {
+	display: inline-block;
+	max-width: 200px;
+}
+
+.thicknessInput {
+	display: inline-block;
+	width: 50px;
+}
+
+.buttonBox {
+	
+}
+
+/*Collapsed*/
+@media screen and (max-width: 768px) {
+	.buttonBox {
+		margin: 0 0 5px 10px;
+	}
+}
